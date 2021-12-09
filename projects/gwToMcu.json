@@ -1,0 +1,5 @@
+{"data":{"audio":true,"channelKey":"","channelName":"369","channelProfile":2,"uccId":66666635,"userProfile":1,"video":true},"method":"join","tx_id":"2","type":"request"}
+2021-11-09  11-09 17:08:33.748  8403  8587 D Status  : SmoothNI notfiy protocol data {"data":{"audio":true,"channelKey":"","channelName":"369","channelProfile":2,"uccId":66666635,"userProfile":1,"video":true},"method":"join","tx_id":"2","type":"request"}
+2021-11-09  11-09 17:08:33.750  8403  8615 I ConnectionManager: Send request join
+2021-11-09  11-09 17:08:33.902  8403  8658 I ConnectionManager: Receive response join
+2021-11-09  11-09 17:08:33.903  8403  8658 D RF_SMOOTH_JNI: Receive DownResponse: {"tx_id":"2","method":"join","data":{"state":false,"reason":4},"timestamp":1636448913384}

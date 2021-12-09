@@ -1,0 +1,5 @@
+10.10.206.232        root		Feinno@2019
+10.10.202.231		root		Feinno@2019
+10.10.202.233	root		Feinno@2019
+ssh user1@10.10.208.240	Feinno@2020
+10.10.220.91		root		urcs@2018

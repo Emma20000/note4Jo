@@ -1,0 +1,34 @@
+spring.application.name=smooth-mcu
+
+spring.profiles.active=${PROFILE_ACTIVE:dev}
+# 注册发现中心配置
+spring.cloud.nacos.discovery.server-addr = ${CONFIG_CENTER:10.10.208.240:8848,10.10.208.240:8849,10.10.208.240:8850}
+spring.cloud.nacos.discovery.namespace = ${CONFIG_NS:c75f498b-a204-4f5c-92d1-cccff8279330}
+spring.cloud.nacos.discovery.cluster-name = ${CLUSTER_NAME:CLUSTERB}
+spring.cloud.nacos.discovery.groupName = ${GROUP_NAME:DEFAULT_GROUP}
+spring.cloud.nacos.discovery.ip = ${PRIVATE_IP:10.10.12.70}
+spring.cloud.nacos.discovery.metadata.fucc=*
+spring.cloud.nacos.discovery.metadata.tucc=*
+spring.cloud.nacos.discovery.metadata.fchannel=*
+spring.cloud.nacos.discovery.metadata.tchannel=*
+
+
+spring.cloud.nacos.config.file-extension=yml
+spring.cloud.nacos.config.namespace=${CONFIG_NS:c75f498b-a204-4f5c-92d1-cccff8279330}
+spring.cloud.nacos.config.group=Service
+spring.cloud.nacos.config.server-addr=${CONFIG_CENTER:10.10.208.240:8848,10.10.208.240:8849,10.10.208.240:8850}
+spring.cloud.nacos.config.refresh=true
+
+# 平台级配置
+spring.cloud.nacos.config.ext-config[0].data-id=srtc_global.properties
+spring.cloud.nacos.config.ext-config[0].group=Global
+spring.cloud.nacos.config.ext-config[0].refresh=true
+spring.cloud.nacos.config.ext-config[1].data-id=cache_global.properties
+spring.cloud.nacos.config.ext-config[1].group=Redis
+spring.cloud.nacos.config.ext-config[1].refresh=true
+spring.cloud.nacos.config.ext-config[2].data-id=smooth_mcu_db.properties
+spring.cloud.nacos.config.ext-config[2].group=DB
+spring.cloud.nacos.config.ext-config[2].refresh=true
+
+
+redis.cache.mcu.enable = true

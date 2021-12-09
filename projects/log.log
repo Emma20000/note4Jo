@@ -1,0 +1,73 @@
+2021-10-13 16:48:33.406 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.UpCompletenessHandler - do Handler in this
+2021-10-13 16:48:33.406 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.AuthenticationHandler - do Handler in this
+2021-10-13 16:48:33.409 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.StreamHandler - do Handler in this
+2021-10-13 16:48:33.409 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.PushMQService - pushMsg =  {"appKey":"CAKE","contentType":"TEXT_MESSAGE","deviceId":"APP;appKey=CAKE;uccId=888;os=Android","enableBucket":false,"from":"888","msg":"eyJjaGFubmVsTmFtZSI6IjEwNTg4OCIsImNyZWF0ZVRpbWUiOiIxNjM0MTE0OTE0MTU0IiwiZGF0YSI6eyJOS05hbWUiOiI4ODgiLCJjb250ZW50Ijoi5qyi6L+OODg46L+b5YWl55u05pKt6Ze0IiwiZXh0cmFzIjoiIiwiZ2lmdENvZGUiOiIiLCJnaWZ0TnVtYmVyIjowLCJsZXZlbCI6IjEwMSIsInJlZEJveFVybCI6IiIsInR5cGUiOiI0In0sImV2ZW50VHlwZSI6IjEiLCJyb2xlIjoiMSIsInVjY0lkIjoiODg4In0=","operation":"OpDanmakuMsg","room":"105888","speed":0,"toList":[],"type":"ROOM"}
+2021-10-13 16:48:33.432 [[Ljava.lang.String;@447fe36a.container-0-C-1] INFO  com.feinno.srtc.live.im.common.service.PopMQService - popMsg =  {"appKey":"CAKE","type":"ROOM","from":"888","deviceId":"APP;appKey=CAKE;uccId=888;os=Android","operation":"OpDanmakuMsg","speed":0,"toList":[],"room":"105888","enableBucket":false,"contentType":"TEXT_MESSAGE","serializeName":null,"msg":"eyJjaGFubmVsTmFtZSI6IjEwNTg4OCIsImNyZWF0ZVRpbWUiOiIxNjM0MTE0OTE0MTU0IiwiZGF0YSI6eyJOS05hbWUiOiI4ODgiLCJjb250ZW50Ijoi5qyi6L+OODg46L+b5YWl55u05pKt6Ze0IiwiZXh0cmFzIjoiIiwiZ2lmdENvZGUiOiIiLCJnaWZ0TnVtYmVyIjowLCJsZXZlbCI6IjEwMSIsInJlZEJveFVybCI6IiIsInR5cGUiOiI0In0sImV2ZW50VHlwZSI6IjEiLCJyb2xlIjoiMSIsInVjY0lkIjoiODg4In0="}
+2021-10-13 16:48:33.436 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.DownCompletenessHandler - do Handler in this
+2021-10-13 16:48:33.439 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.BucketReducingHandler - do Handler in this
+2021-10-13 16:48:33.442 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.PushRedisHandler - do Handler in this
+2021-10-13 16:48:33.446 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.CacheService - addDanmeku key is :danmakuMsg:CAKE10588863
+2021-10-13 16:48:46.707 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.UpCompletenessHandler - do Handler in this
+2021-10-13 16:48:46.707 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.AuthenticationHandler - do Handler in this
+2021-10-13 16:48:46.708 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.StreamHandler - do Handler in this
+2021-10-13 16:48:46.708 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.PushMQService - pushMsg =  {"appKey":"CAKE","contentType":"TEXT_MESSAGE","deviceId":"APP;appKey=CAKE;uccId=7777;os=Android","enableBucket":false,"from":"7777","msg":"eyJjaGFubmVsTmFtZSI6IjEwNTc3NzciLCJjcmVhdGVUaW1lIjoiMTYzNDExNjA0NDk0NCIsImRhdGEiOnsiTktOYW1lIjoiNzc3NyIsImNvbnRlbnQiOiLlrp3lrp3niYjmnKwiLCJleHRyYXMiOiIiLCJnaWZ0Q29kZSI6IiIsImdpZnROdW1iZXIiOjAsImxldmVsIjoiMTAxIiwicmVkQm94VXJsIjoiIiwidHlwZSI6IjEifSwiZXZlbnRUeXBlIjoiMSIsInJvbGUiOiIxIiwidWNjSWQiOiI3Nzc3In0=","operation":"OpDanmakuMsg","room":"1057777","speed":0,"toList":[],"type":"ROOM"}
+2021-10-13 16:48:46.716 [[Ljava.lang.String;@447fe36a.container-0-C-1] INFO  com.feinno.srtc.live.im.common.service.PopMQService - popMsg =  {"appKey":"CAKE","type":"ROOM","from":"7777","deviceId":"APP;appKey=CAKE;uccId=7777;os=Android","operation":"OpDanmakuMsg","speed":0,"toList":[],"room":"1057777","enableBucket":false,"contentType":"TEXT_MESSAGE","serializeName":null,"msg":"eyJjaGFubmVsTmFtZSI6IjEwNTc3NzciLCJjcmVhdGVUaW1lIjoiMTYzNDExNjA0NDk0NCIsImRhdGEiOnsiTktOYW1lIjoiNzc3NyIsImNvbnRlbnQiOiLlrp3lrp3niYjmnKwiLCJleHRyYXMiOiIiLCJnaWZ0Q29kZSI6IiIsImdpZnROdW1iZXIiOjAsImxldmVsIjoiMTAxIiwicmVkQm94VXJsIjoiIiwidHlwZSI6IjEifSwiZXZlbnRUeXBlIjoiMSIsInJvbGUiOiIxIiwidWNjSWQiOiI3Nzc3In0="}
+2021-10-13 16:48:46.720 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.DownCompletenessHandler - do Handler in this
+2021-10-13 16:48:46.720 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.BucketReducingHandler - do Handler in this
+2021-10-13 16:48:46.720 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.PushRedisHandler - do Handler in this
+2021-10-13 16:48:46.720 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.CacheService - addDanmeku key is :danmakuMsg:CAKE105777791
+2021-10-13 16:48:49.587 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.UpCompletenessHandler - do Handler in this
+2021-10-13 16:48:49.587 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.AuthenticationHandler - do Handler in this
+2021-10-13 16:48:49.590 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.StreamHandler - do Handler in this
+2021-10-13 16:48:49.590 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.PushMQService - pushMsg =  {"appKey":"CAKE","contentType":"TEXT_MESSAGE","deviceId":"APP;appKey=CAKE;uccId=888;os=Android","enableBucket":false,"from":"888","msg":"eyJjaGFubmVsTmFtZSI6IjEwNTg4OCIsImNyZWF0ZVRpbWUiOiIxNjM0MTE0OTMwMzc3IiwiZGF0YSI6eyJOS05hbWUiOiI4ODgiLCJjb250ZW50Ijoi5qyi6L+OODg46L+b5YWl55u05pKt6Ze0IiwiZXh0cmFzIjoiIiwiZ2lmdENvZGUiOiIiLCJnaWZ0TnVtYmVyIjowLCJsZXZlbCI6IjEwMSIsInJlZEJveFVybCI6IiIsInR5cGUiOiI0In0sImV2ZW50VHlwZSI6IjEiLCJyb2xlIjoiMSIsInVjY0lkIjoiODg4In0=","operation":"OpDanmakuMsg","room":"105888","speed":0,"toList":[],"type":"ROOM"}
+2021-10-13 16:48:49.614 [[Ljava.lang.String;@447fe36a.container-0-C-1] INFO  com.feinno.srtc.live.im.common.service.PopMQService - popMsg =  {"appKey":"CAKE","type":"ROOM","from":"888","deviceId":"APP;appKey=CAKE;uccId=888;os=Android","operation":"OpDanmakuMsg","speed":0,"toList":[],"room":"105888","enableBucket":false,"contentType":"TEXT_MESSAGE","serializeName":null,"msg":"eyJjaGFubmVsTmFtZSI6IjEwNTg4OCIsImNyZWF0ZVRpbWUiOiIxNjM0MTE0OTMwMzc3IiwiZGF0YSI6eyJOS05hbWUiOiI4ODgiLCJjb250ZW50Ijoi5qyi6L+OODg46L+b5YWl55u05pKt6Ze0IiwiZXh0cmFzIjoiIiwiZ2lmdENvZGUiOiIiLCJnaWZ0TnVtYmVyIjowLCJsZXZlbCI6IjEwMSIsInJlZEJveFVybCI6IiIsInR5cGUiOiI0In0sImV2ZW50VHlwZSI6IjEiLCJyb2xlIjoiMSIsInVjY0lkIjoiODg4In0="}
+2021-10-13 16:48:49.623 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.DownCompletenessHandler - do Handler in this
+2021-10-13 16:48:49.626 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.BucketReducingHandler - do Handler in this
+2021-10-13 16:48:49.626 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.PushRedisHandler - do Handler in this
+2021-10-13 16:48:49.629 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.CacheService - addDanmeku key is :danmakuMsg:CAKE10588893
+
+
+
+2021-10-13 16:50:07.937 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.UpCompletenessHandler - do Handler in this
+2021-10-13 16:50:07.937 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.AuthenticationHandler - do Handler in this
+2021-10-13 16:50:07.942 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.StreamHandler - do Handler in this
+2021-10-13 16:50:07.946 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.PushMQService - pushMsg =  {"appKey":"CAKE","contentType":"TEXT_MESSAGE","deviceId":"APP;appKey=CAKE;uccId=333;os=Android","enableBucket":false,"from":"333","msg":"eyJjaGFubmVsTmFtZSI6IjEwNTc3NzciLCJjcmVhdGVUaW1lIjoiMTYzNDExNTAwODE3MyIsImRhdGEiOnsiTktOYW1lIjoiMzMzIiwiY29udGVudCI6IjY2Njg4OCIsImV4dHJhcyI6IiIsImdpZnRDb2RlIjoiIiwiZ2lmdE51bWJlciI6MCwibGV2ZWwiOiIxMDEiLCJyZWRCb3hVcmwiOiIiLCJ0eXBlIjoiMSJ9LCJldmVudFR5cGUiOiIxIiwicm9sZSI6IjIiLCJ1Y2NJZCI6IjMzMyJ9","operation":"OpDanmakuMsg","room":"1057777","speed":0,"toList":[],"type":"ROOM"}
+2021-10-13 16:50:07.955 [[Ljava.lang.String;@447fe36a.container-0-C-1] INFO  com.feinno.srtc.live.im.common.service.PopMQService - popMsg =  {"appKey":"CAKE","type":"ROOM","from":"333","deviceId":"APP;appKey=CAKE;uccId=333;os=Android","operation":"OpDanmakuMsg","speed":0,"toList":[],"room":"1057777","enableBucket":false,"contentType":"TEXT_MESSAGE","serializeName":null,"msg":"eyJjaGFubmVsTmFtZSI6IjEwNTc3NzciLCJjcmVhdGVUaW1lIjoiMTYzNDExNTAwODE3MyIsImRhdGEiOnsiTktOYW1lIjoiMzMzIiwiY29udGVudCI6IjY2Njg4OCIsImV4dHJhcyI6IiIsImdpZnRDb2RlIjoiIiwiZ2lmdE51bWJlciI6MCwibGV2ZWwiOiIxMDEiLCJyZWRCb3hVcmwiOiIiLCJ0eXBlIjoiMSJ9LCJldmVudFR5cGUiOiIxIiwicm9sZSI6IjIiLCJ1Y2NJZCI6IjMzMyJ9"}
+2021-10-13 16:50:07.960 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.DownCompletenessHandler - do Handler in this
+2021-10-13 16:50:07.964 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.BucketReducingHandler - do Handler in this
+2021-10-13 16:50:07.964 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.PushRedisHandler - do Handler in this
+2021-10-13 16:50:07.965 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.CacheService - addDanmeku key is :danmakuMsg:CAKE105777711
+2021-10-13 16:50:20.368 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.UpCompletenessHandler - do Handler in this
+2021-10-13 16:50:20.368 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.AuthenticationHandler - do Handler in this
+2021-10-13 16:50:20.369 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.StreamHandler - do Handler in this
+2021-10-13 16:50:20.369 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.PushMQService - pushMsg =  {"appKey":"CAKE","contentType":"TEXT_MESSAGE","deviceId":"APP;appKey=CAKE;uccId=888;os=Android","enableBucket":false,"from":"888","msg":"eyJjaGFubmVsTmFtZSI6IjEwNTg4OCIsImNyZWF0ZVRpbWUiOiIxNjM0MTE1MDIxMTYzIiwiZGF0YSI6eyJOS05hbWUiOiI4ODgiLCJjb250ZW50Ijoi5qyi6L+OODg46L+b5YWl55u05pKt6Ze0IiwiZXh0cmFzIjoiIiwiZ2lmdENvZGUiOiIiLCJnaWZ0TnVtYmVyIjowLCJsZXZlbCI6IjEwMSIsInJlZEJveFVybCI6IiIsInR5cGUiOiI0In0sImV2ZW50VHlwZSI6IjEiLCJyb2xlIjoiMSIsInVjY0lkIjoiODg4In0=","operation":"OpDanmakuMsg","room":"105888","speed":0,"toList":[],"type":"ROOM"}
+2021-10-13 16:50:20.381 [[Ljava.lang.String;@447fe36a.container-0-C-1] INFO  com.feinno.srtc.live.im.common.service.PopMQService - popMsg =  {"appKey":"CAKE","type":"ROOM","from":"888","deviceId":"APP;appKey=CAKE;uccId=888;os=Android","operation":"OpDanmakuMsg","speed":0,"toList":[],"room":"105888","enableBucket":false,"contentType":"TEXT_MESSAGE","serializeName":null,"msg":"eyJjaGFubmVsTmFtZSI6IjEwNTg4OCIsImNyZWF0ZVRpbWUiOiIxNjM0MTE1MDIxMTYzIiwiZGF0YSI6eyJOS05hbWUiOiI4ODgiLCJjb250ZW50Ijoi5qyi6L+OODg46L+b5YWl55u05pKt6Ze0IiwiZXh0cmFzIjoiIiwiZ2lmdENvZGUiOiIiLCJnaWZ0TnVtYmVyIjowLCJsZXZlbCI6IjEwMSIsInJlZEJveFVybCI6IiIsInR5cGUiOiI0In0sImV2ZW50VHlwZSI6IjEiLCJyb2xlIjoiMSIsInVjY0lkIjoiODg4In0="}
+2021-10-13 16:50:20.384 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.DownCompletenessHandler - do Handler in this
+2021-10-13 16:50:20.402 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.BucketReducingHandler - do Handler in this
+2021-10-13 16:50:20.404 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.PushRedisHandler - do Handler in this
+2021-10-13 16:50:20.405 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.CacheService - addDanmeku key is :danmakuMsg:CAKE10588843
+2021-10-13 16:50:33.902 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.UpCompletenessHandler - do Handler in this
+2021-10-13 16:50:33.902 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.AuthenticationHandler - do Handler in this
+2021-10-13 16:50:33.905 [Worker-299] INFO  com.feinno.srtc.live.im.common.upstream.handler.StreamHandler - do Handler in this
+2021-10-13 16:50:33.906 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.PushMQService - pushMsg =  {"appKey":"CAKE","contentType":"TEXT_MESSAGE","deviceId":"APP;appKey=CAKE;uccId=888;os=Android","enableBucket":false,"from":"888","msg":"eyJjaGFubmVsTmFtZSI6IjEwNTg4OCIsImNyZWF0ZVRpbWUiOiIxNjM0MTE1MDM0NTgzIiwiZGF0YSI6eyJOS05hbWUiOiI4ODgiLCJjb250ZW50Ijoi5qyi6L+OODg46L+b5YWl55u05pKt6Ze0IiwiZXh0cmFzIjoiIiwiZ2lmdENvZGUiOiIiLCJnaWZ0TnVtYmVyIjowLCJsZXZlbCI6IjEwMSIsInJlZEJveFVybCI6IiIsInR5cGUiOiI0In0sImV2ZW50VHlwZSI6IjEiLCJyb2xlIjoiMSIsInVjY0lkIjoiODg4In0=","operation":"OpDanmakuMsg","room":"105888","speed":0,"toList":[],"type":"ROOM"}
+2021-10-13 16:50:33.929 [[Ljava.lang.String;@447fe36a.container-0-C-1] INFO  com.feinno.srtc.live.im.common.service.PopMQService - popMsg =  {"appKey":"CAKE","type":"ROOM","from":"888","deviceId":"APP;appKey=CAKE;uccId=888;os=Android","operation":"OpDanmakuMsg","speed":0,"toList":[],"room":"105888","enableBucket":false,"contentType":"TEXT_MESSAGE","serializeName":null,"msg":"eyJjaGFubmVsTmFtZSI6IjEwNTg4OCIsImNyZWF0ZVRpbWUiOiIxNjM0MTE1MDM0NTgzIiwiZGF0YSI6eyJOS05hbWUiOiI4ODgiLCJjb250ZW50Ijoi5qyi6L+OODg46L+b5YWl55u05pKt6Ze0IiwiZXh0cmFzIjoiIiwiZ2lmdENvZGUiOiIiLCJnaWZ0TnVtYmVyIjowLCJsZXZlbCI6IjEwMSIsInJlZEJveFVybCI6IiIsInR5cGUiOiI0In0sImV2ZW50VHlwZSI6IjEiLCJyb2xlIjoiMSIsInVjY0lkIjoiODg4In0="}
+2021-10-13 16:50:33.935 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.DownCompletenessHandler - do Handler in this
+2021-10-13 16:50:33.935 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.BucketReducingHandler - do Handler in this
+2021-10-13 16:50:33.935 [Worker-299] INFO  com.feinno.srtc.live.im.common.downstream.handler.PushRedisHandler - do Handler in this
+2021-10-13 16:50:33.936 [Worker-299] INFO  com.feinno.srtc.live.im.common.service.CacheService - addDanmeku key is :danmakuMsg:CAKE10588863
+
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration
+
+16549
+
+/home/srtc-http-gat…
+
+
+docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+
+
+2、大型会议观众下发的拉流地址有问题
+rtmp://10.0.0.38:1935/conference/CAKE_114 推流地址
+rtmp://ec2-52-83-224-21.cn-northwest-1.compute.amazonaws.com.cn:1935/conference/CAKE_114  实际可拉流地址
+rtmp://l.srtc.fetiononline.com:1935/live/CAKE_114 下发地址不可用

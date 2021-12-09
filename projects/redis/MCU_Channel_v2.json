@@ -1,0 +1,26 @@
+{
+    "serviceId": "MediaGW_10.10.12.122",
+    "uccId": 8362,
+    "userProfile": 2,
+    "mobileInfo": "Linux-desktop(undefined/Chrome)",
+    "mobileVer": "Linuxundefined(Chrome94.0.4606.81)",
+    "audio": true,
+    "video": true,
+    "subVideo": false,
+    "audioName": "mic",
+    "videoName": "camera",
+    "audioMute": false,
+    "videoMute": false,
+    "subVideoMute": false,
+    "audioScore": "10",
+    "videoScore": "10",
+    "peerId": "cdee6c34-64a3-4de4-b1cb-08bc701692ae",
+    "audioCreateTime": 1634701147637,
+    "audioUnactiveDuration": 0,
+    "audioLastUnactiveTime": 1634701147637,
+    "videoCreateTime": 1634701148123,
+    "videoUnactiveDuration": 0,
+    "videoLastUnactiveTime": 1634701148123
+  }
+
+  MCU_Channel_v2:1d27471c30a9e6cf574bdaf7fea96c8e:666777

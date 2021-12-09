@@ -1,0 +1,67 @@
+{
+    "sender": true,
+    "receiver": true,
+    "device": {
+        "clientVer": "1.2.2",
+        "mobileInfo": "Android",
+        "mobileVer": "1.3.3"
+    }
+}
+
+  42[
+    "response",
+    {
+        "method": "connection",
+        "tx_id": "265039a2-4f4f-4d59-97ec-2c52a0fc1126",
+        "data": {
+            "code": 200
+        }
+    }
+] 
+
+
+  [
+    "report",
+    {
+        "type": "info",
+        "data": {
+            "timestamp": 1636529056987,
+            "method": "client",
+            "data": {
+                "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
+                "browser": "Chrome95.0.4638.69",
+                "os": "macOS/10.15.7(Catalina)",
+                "engine": "Blink",
+                "deviceId": "Chrome74"
+            }
+        }
+    }
+]
+
+  [
+    "request",
+    {
+        "method": "createWebRtcTransport",
+        "tx_id": "8c635d6e-4d24-41c8-bb48-f7a83a0fde2b",
+        "data": {
+            "sender": true,
+            "receiver": {
+                "defaultMuteAllAudio": false,
+                "defaultMuteAllVideo": false,
+                "defaultAllVideoStreamType": 0
+            },
+            "device": {
+                "clientVer": "1.9.0-2021-10-20",
+                "mobileInfo": "macOS-desktop(Apple/Chrome)",
+                "mobileVer": "macOS10.15.7(Chrome95.0.4638.69)"
+            }
+        }
+    }
+]
+
+42["report",{"type":"info","data":{"timestamp":1636529057004,"method":"capabilities","data":{"capabilities":{"codecs":[{"mimeType":"audio/opus","kind":"audio","preferredPayloadType":101,"clockRate":48000,"channels":2,"parameters":{"minptime":10,"useinbandfec":1},"rtcpFeedback":[{"type":"nack","parameter":""}]},{"mimeType":"video/VP8","kind":"video","preferredPayloadType":96,"clockRate":90000,"parameters":{},"rtcpFeedback":[{"type":"nack","parameter":""},{"type":"goog-remb","parameter":""},{"type":"ccm","parameter":"fir"},{"type":"nack","parameter":"pli"}]},{"mimeType":"video/rtx","kind":"video","preferredPayloadType":102,"clockRate":90000,"parameters":{"apt":96},"rtcpFeedback":[]},{"mimeType":"video/VP9","kind":"video","preferredPayloadType":103,"clockRate":90000,"parameters":{"profile-id":2},"rtcpFeedback":[{"type":"nack","parameter":""},{"type":"goog-remb","parameter":""},{"type":"ccm","parameter":"fir"},{"type":"nack","parameter":"pli"}]},{"mimeType":"video/rtx","kind":"video","preferredPayloadType":104,"clockRate":90000,"parameters":{"apt":103},"rtcpFeedback":[]},{"mimeType":"video/H264","kind":"video","preferredPayloadType":100,"clockRate":90000,"parameters":{"level-asymmetry-allowed":1,"packetization-mode":1,"profile-level-id":"42e01f"},"rtcpFeedback":[{"type":"nack","parameter":""},{"type":"goog-remb","parameter":""},{"type":"ccm","parameter":"fir"},{"type":"nack","parameter":"pli"}]},{"mimeType":"video/rtx","kind":"video","preferredPayloadType":105,"clockRate":90000,"parameters":{"apt":100},"rtcpFeedback":[]},{"mimeType":"video/H264","kind":"video","preferredPayloadType":106,"clockRate":90000,"parameters":{"level-asymmetry-allowed":1,"packetization-mode":1,"profile-level-id":"42001f"},"rtcpFeedback":[{"type":"nack","parameter":""},{"type":"goog-remb","parameter":""},{"type":"ccm","parameter":"fir"},{"type":"nack","parameter":"pli"}]},{"mimeType":"video/rtx","kind":"video","preferredPayloadType":107,"clockRate":90000,"parameters":{"apt":106},"rtcpFeedback":[]}],"headerExtensions":[{"kind":"audio","uri":"urn:ietf:params:rtp-hdrext:sdes:mid","preferredId":1,"preferredEncrypt":false,"direction":"sendrecv"},{"kind":"video","uri":"urn:ietf:params:rtp-hdrext:sdes:mid","preferredId":1,"preferredEncrypt":false,"direction":"sendrecv"},{"kind":"audio","uri":"http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time","preferredId":4,"preferredEncrypt":false,"direction":"sendrecv"},{"kind":"video","uri":"http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time","preferredId":4,"preferredEncrypt":false,"direction":"sendrecv"},{"kind":"audio","uri":"urn:ietf:params:rtp-hdrext:ssrc-audio-level","preferredId":10,"preferredEncrypt":false,"direction":"sendrecv"},{"kind":"video","uri":"urn:ietf:params:rtp-hdrext:toffset","preferredId":12,"preferredEncrypt":false,"direction":"sendrecv"}]}}}}]
+42["request",{"method":"join","tx_id":"e7768170-e24e-41ed-af8b-6bf3697509de","data":{"uccId":818255,"channelKey":"1636518","channelName":"1636518","channelProfile":2,"userProfile":2,"audio":true,"video":true}}]
+
+
+42["request",{"method":"join","tx_id":"e7768170-e24e-41ed-af8b-6bf3697509de","data":{"uccId":818255,"channelKey":"1636518","channelName":"1636518","channelProfile":2,"userProfile":2,"audio":true,"video":true}}]
+42["request",{"method":"join","tx_id":"e7768170-e24e-41ed-af8b-6bf3697509de","data":{"uccId":123456,"channelKey":"1636518","channelName":"1636518","channelProfile":2,"userProfile":2,"audio":true,"video":true}}]

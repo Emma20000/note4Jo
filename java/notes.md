@@ -1,0 +1,2 @@
+- > 实现 Comparator 接口时， 只需要实现 compare(T o1, T o2)方法即可， 无需实现 boolean equals(Object obj)。 因为 equals方法 不实现 可以直接从 Object继承过来。
+- 

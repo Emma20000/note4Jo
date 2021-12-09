@@ -1,0 +1,5 @@
+- > 查看 硬盘总大小  sudo fdisk -l | grep Disk
+- > lsblk 查看磁盘情况
+- > mount 查看挂载点情况
+- > fdisk + 磁盘路径   然后输入 p  回车 看分区情况
+- > lsblk -d -o name,rota  查看磁盘是 固态 还是 机械硬盘   rota = 1 为HDD。 0 为SSD

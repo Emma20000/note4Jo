@@ -1,0 +1,112 @@
+@startuml `频道禁言踢人流程图`
+
+participant SDK1 as sdk1
+participant MediaGW1 as gw1
+participant MCU as mcu
+participant MediaGW2 as gw2
+participant SDK2 as sdk2
+participant SDK3 as sdk3
+participant SDK4 as sdk4
+
+alt "加入频道,sdk1为主持人"
+sdk1 -> gw1: join
+sdk2 -> gw2: join
+sdk3 -> gw2: join
+end
+
+==踢人==
+sdk1 -> gw1: kickOut(uccId:[sdk2])
+gw1 -> mcu: [1] /operator \n (operator: "MANAGEMENT",etype:"KICKOUT")
+mcu -> gw2: [2] /operator to sdk2 \n (operator: "ON_MANAGEMENT",etype:"KICKOUT")
+gw2 -> sdk2: disconnect(reason:9)
+mcu <-- gw2: [2] 200 OK
+mcu -> gw2: [3] /operator to sdk3 \n (operator: "ON_USERLEAVE",etype:"KICKOUT")
+mcu -> gw1: [4] /operator to sdk1 \n (operator: "ON_USERLEAVE",etype:"KICKOUT")
+gw2 -> sdk3: userLeave(reason:4)
+gw1 -> sdk1: userLeave (reason:4)
+mcu <-- gw2: [3] 200 OK
+' gw2 <-- sdk3: userLeave 200
+mcu <-- gw1: [4] 200 OK
+' gw1 <-- sdk1: userLeave 200
+gw1 <-- mcu: [1] 200 OK
+sdk1 <-- gw1: kickOut 200 OK
+
+||| 
+
+==全体禁言==
+sdk1 -> gw1: banRemoteStream(all:true, ban:true, kind:"audio")
+gw1 -> mcu: [1] /operator \n (operator: "MANAGEMENT",etype:"BANAUDIO")\n (channel.banAudio == true)
+mcu -> gw2: [2] /operator to sdk2、sdk3 \n (operator: "ON_MANAGEMENT",etype:"BANAUDIO")\n (channel.banAudio == true)
+mcu <-- gw2: [2] 200 OK
+gw1 <-- mcu: [1] 200 OK
+sdk1 <-- gw1: banRemoteStream 200 OK
+gw2 -> sdk2: onBan(all:true, ban:true，...)
+gw2 <-- sdk2: onBan 200 OK
+gw2 -> sdk3: onBan(all:true, ban:true，...)
+gw2 <-- sdk3: onBan 200 OK
+||| 
+alt "新用户加入"
+sdk4 -> gw2: join
+sdk4 <- gw2: onBan(all:true, ban:true，...) 提示频道为禁言状态
+sdk4 -> gw2: leave
+end
+||| 
+
+==指定用户禁言==
+sdk1 -> gw1: banRemoteStream(uccId:[sdk2], all:false, ban:true, kind:"audio")
+gw1 -> mcu: [1] /operator \n (operator: "MANAGEMENT",etype:"BANAUDIO")\n (channel.banAudio == false, ban == true)
+mcu -> gw2: [2] /operator to sdk2 \n (operator: "ON_MANAGEMENT",etype:"BANAUDIO")\n (channel.banAudio == false, ban == true, fuccId:sdk2)
+gw2 -> sdk2: onBan(all:false, ban:true, uccId:sdk2，...)
+mcu <-- gw2: [2] 200 OK
+' gw2 <-- sdk2: onBan 200 OK
+mcu -> gw2: [3] /operator to sdk3 \n (operator: "ON_MANAGEMENT",etype:"BANAUDIO")\n (channel.banAudio == false, ban == true, fuccId:sdk2)
+mcu -> gw1: [4] /operator to sdk1 \n (operator: "ON_MANAGEMENT",etype:"BANAUDIO")\n (channel.banAudio == false, ban == true, fuccId:sdk2)
+gw2 -> sdk3: onBan(all:false, ban:true, uccId:sdk2，...)
+gw1 -> sdk1: onBan(all:false, ban:true, uccId:sdk2，...)
+mcu <-- gw2: [3] 200 OK
+mcu <-- gw1: [4] 200 OK
+' gw2 <-- sdk3: onBan 200 OK
+' gw1 <-- sdk1: onBan 200 OK
+gw1 <-- mcu: [1] 200 OK
+sdk1 <-- gw1: banRemoteStream 200 OK
+||| 
+alt "新用户加入"
+sdk4 -> gw2: join
+sdk4 <-- gw2: 200
+gw2 -> gw2: subscribe sdk2
+gw2 -> sdk4: newConsumer sdk2
+' gw2 -> sdk4: onBan(all:false, ban:true, uccId:sdk2，...)
+' gw2 <-- sdk4: onBan 200 OK
+sdk4 -> gw2: leave
+end
+||| 
+
+==全体/指定用户禁视频==
+note over gw1,gw2
+部分参数变更，其他流程同禁言
+kind:"video", etype:"BANVIDEO"，ban == true
+全体禁视频为 channel.banVideo == true
+指定用户禁视频为 channel.banVideo == false
+end note
+||| 
+
+==全体/指定用户取消禁言==
+note over gw1,gw2
+部分参数变更，其他流程同上
+etype:"UNBANAUDIO"， ban == false
+全体禁言为 channel.banAudio == false
+指定用户禁言为 channel.banAudio 不变
+end note
+|||
+
+==全体/指定用户取消禁视频==
+note over gw1,gw2
+部分参数变更，其他流程同上
+etype:"UNBANVIDEO"， ban == false
+全体禁言为 channel.banVideo == false
+指定用户禁言为 channel.banVideo 不变
+end note
+|||
+
+
+@enduml
