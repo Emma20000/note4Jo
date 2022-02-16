@@ -1,0 +1,1 @@
+#### 1 gradle 7.0以上 需要https  否则需要设置 allowInsecureProtocol=true
