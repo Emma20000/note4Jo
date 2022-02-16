@@ -1,0 +1,1 @@
+ffmpeg -f xllgrab -i :0.0+0.0 -vcodes libx261 -s 1280x128 *1 38 -b 15 flv rtmp://localhost:1930/conference/desk 
