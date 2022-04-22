@@ -21,7 +21,7 @@
   1. 2.0.0 是服务端主动下推弹幕
   2. 2.0.0-noKafka是拉取弹幕没有kafka的分支
   3. performance_test是测试分支
-  4. pullDanmaku-Kafka是拉取弹幕版本
+  4. pullDanmaku-Kafka是拉取弹幕版本[当前分支]
   5. pullDanmaku-Kafka-ICBC是工行拉取弹幕版本
 # srtc-nami
 >

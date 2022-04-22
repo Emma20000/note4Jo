@@ -166,4 +166,4 @@ http://www.2cto.com/os/201411/355976.html
 
 
 #### 2 编译 flv-module ssl
-sudo ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module --add-module=/feinno/nginx/nginx-http-flv-module
+sudo ./configure --prefix=/usr/local/nginx_rtmp --with-http_stub_status_module --with-http_ssl_module --add-module=/home/centos/nginx_rtmp/nginx-http-flv-module
